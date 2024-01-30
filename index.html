@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=585 height=1266 style="width: 100%; height: 100%"></canvas>
+      <canvas id="unity-canvas" width=585 height=1266></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -56,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/PovertyGamePatch1.loader.js";
+      var loaderUrl = buildUrl + "/PovertyWEBGL_Testing.loader.js";
       var config = {
-        dataUrl: buildUrl + "/PovertyGamePatch1.data.br",
-        frameworkUrl: buildUrl + "/PovertyGamePatch1.framework.js.br",
-        codeUrl: buildUrl + "/PovertyGamePatch1.wasm.br",
+        dataUrl: buildUrl + "/PovertyWEBGL_Testing.data.unityweb",
+        frameworkUrl: buildUrl + "/PovertyWEBGL_Testing.framework.js.unityweb",
+        codeUrl: buildUrl + "/PovertyWEBGL_Testing.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Indiana University eLearning Design and Services",
         productName: "C'est La Vie The Game of Social Life",
