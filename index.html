@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | C'est La Vie The Game of Social Life</title>
+    <title>Unity WebGL Player | HTML_TST</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=585 height=1266></canvas>
+      <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">C'est La Vie The Game of Social Life</div>
+        <div id="unity-build-title">HTML_TST</div>
       </div>
     </div>
     <script>
@@ -56,15 +56,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/PovertyWEBGL_Testing.loader.js";
+      var loaderUrl = buildUrl + "/TestHTMLBUilds.loader.js";
       var config = {
-        dataUrl: buildUrl + "/PovertyWEBGL_Testing.data",
-        frameworkUrl: buildUrl + "/PovertyWEBGL_Testing.framework.js",
-        codeUrl: buildUrl + "/PovertyWEBGL_Testing.wasm",
+        dataUrl: buildUrl + "/TestHTMLBUilds.data.br",
+        frameworkUrl: buildUrl + "/TestHTMLBUilds.framework.js.br",
+        codeUrl: buildUrl + "/TestHTMLBUilds.wasm.br",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "Indiana University eLearning Design and Services",
-        productName: "C'est La Vie The Game of Social Life",
-        productVersion: "0.4",
+        companyName: "DefaultCompany",
+        productName: "HTML_TST",
+        productVersion: "1.0",
         showBanner: unityShowBanner,
       };
 
@@ -93,8 +93,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "585px";
-        canvas.style.height = "1266px";
+        canvas.style.width = "960px";
+        canvas.style.height = "600px";
       }
 
       loadingBar.style.display = "block";
