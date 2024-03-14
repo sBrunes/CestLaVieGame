@@ -1,5 +1,9 @@
 var AllDecisionButtons = [];
 
+const newButton = document.createElement('button');
+newButton.textContent = 'click me I guess';
+document.getElementById("ButtonParent").appendChild(newButton);
+
 function aFunctionImplementedInExternalJsFile(jsInt) {
 	alert(jsInt + " from external js");
 }
