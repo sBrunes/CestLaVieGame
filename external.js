@@ -4,6 +4,8 @@ const newButton = document.createElement('BUTTON');
 newButton.innerHTML = 'click me I guess';
 document.getElementsByTagName("body")[0].appendChild(newButton);
 
+alert("adding button");
+
 function aFunctionImplementedInExternalJsFile(jsInt) {
 	alert(jsInt + " from external js");
 }
