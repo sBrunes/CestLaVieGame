@@ -8,21 +8,30 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
-    <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=585 height=1566></canvas>
-      <div id="unity-loading-bar">
-        <div id="unity-logo"></div>
-        <div id="unity-progress-bar-empty">
-          <div id="unity-progress-bar-full"></div>
+      <div id="Container" style="display: flex; background-color: blue; align-items: center; justify-content: center; height: 100px; margin-top: 1%;">
+        <button id="htp_button" style="width: 10%; height: 100%; margin-right: 5%; font-size: 27px;">How To Play</button>
+        <button id="option_button" style="width: 10%; height: 100%; font-size: 27px;">Options</button>
+        <div id="unity-container" class="unity-desktop">
+          <canvas id="unity-canvas" width=1080 height=540></canvas>
+          <div id="unity-loading-bar">
+            <div id="unity-logo"></div>
+            <div id="unity-progress-bar-empty">
+              <div id="unity-progress-bar-full"></div>
+            </div>
+          </div>
+          <div id="unity-warning"> </div>
+          <div id="unity-footer">
+            <div id="unity-webgl-logo"></div>
+            <div id="unity-fullscreen-button"></div>
+            <div id="unity-build-title">C'est La Vie The Game of Social Life</div>
+          </div>
         </div>
       </div>
-      <div id="unity-warning"> </div>
-      <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
-        <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">C'est La Vie The Game of Social Life</div>
+      <div id="ButtonContainer" style="display: flex; background-color: blue; flex-direction: column; align-items: center; justify-content: center; height: 100%; margin-top: 90%;">
+        <!-- <button class="DynamicButton">TestButton1</button>
+        <button class="DynamicButton">TestButton2</button>
+        <button class="DynamicButton">TestButton3</button> -->
       </div>
-    </div>
     <script src="external.js"></script>
     <script>
       var container = document.querySelector("#unity-container");
